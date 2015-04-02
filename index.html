@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<head>
+  <link href="/normalize.css" rel="stylesheet">
+  <style>
+    header {
+      text-align: center;
+      background: url('http://i.imgur.com/ZLen6Sh.jpg');
+      background-size: cover;
+      background-position: center;
+      color: black;
+    }
+    a {
+      color: white;
+    }
+    h1 {
+      font-size: 70px;
+      color: green;
+      position: relative;
+      right: 15%;
+      text-shadow:
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    }
+    img {
+      margin: 40px 0px 0px 0px;
+      border: 7px solid white;
+      border-radius: 20px;
+      position: relative;
+      right: 300px;
+      height: 20%;
+    }
+    ul {
+      padding: 10px;
+      background: rgba(0,0,0,0.5);
+      position: relative;
+      right: 20%;
+    }
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+    }
+    article {
+      max-width: 500px;
+      padding: 20px;
+      margin: 0 auto;
+      background: rgba(0,0,0,0.4);
+      border-radius: 20px;
+      margin-bottom: 10px
+    }
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 36px;
+        padding: 5px;
+        position: relative;
+        left: 4%;
+      }
+      li {
+        padding: 5px;
+        display: block;
+      }
+      img {
+        position: relative;
+        left: 4%;
+      }
+      ul {
+        position: relative;
+        right: 4%;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="http://i.imgur.com/2Gp08Th.jpg">
+    <h1>A Hiking Blog</h1>
+    <ul>
+      <li><a href="#">About Me</a></li>
+      <li><a href="#">Favorite Hikes</a></li>
+      <li><a href="#">Favorite Camping</a></li>
+    </ul>
+  </header>
+  <article>
+    <h2>Hiking the Pacific Crest Trail</h2>
+    <p>Nope, not gonna do it. That's way too long, you must be crazy.</p>
+    <button>Like</button>
+  </article>
+  <article>
+    <h2>Hiking the Appalacian Trail</h2>
+    <p>Hiked some of it. Very pretty. Found some great camping spots, slept on rocks one night (ouch), ate wild blueberries for breakfast.</p>
+    <button>Like</button>
+  </article>
+  <article>
+    <h2>Camino de Santiago</h2>
+    <p>Also ridiculously long, but would like to do it anyway.  At least it's along a populated route where I could stay in Inns and Hostels.</p>
+    <button>Like</button>
+  </article>
+  <script>
+    $("button").on("click", function() {
+      alert("It's late and I'm tired, I'm going to stop now.");
+    });
+  </script>
+</body>
